@@ -53,7 +53,7 @@ func NewConfig(chainConfigs ...ChainConfig) Config {
 
 	return Config{
 		Global: Global{
-			LogLevel: "info",
+			LogLevel: "debug",
 		},
 		Mode: Mode{
 			Clients: Clients{
@@ -69,7 +69,7 @@ func NewConfig(chainConfigs ...ChainConfig) Config {
 			},
 			Packets: Packets{
 				Enabled:        true,
-				ClearInterval:  0,
+				ClearInterval:  10,
 				ClearOnStart:   true,
 				TxConfirmation: false,
 			},
